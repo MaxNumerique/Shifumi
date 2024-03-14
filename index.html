@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet" />
+
+    <title>Shifumi</title>
+</head>
+
+<body>
+    <main>
+        <div class="jeuContainer" style="display: block">
+            <div class="titreContainer">
+                <h1>Shifumi</h1>
+            </div>
+            <div class="Startbutton">
+                <button class="Start" onclick="startGame()">START</button>
+            </div>
+        </div>
+        <div class="shifumiPlateau" style="display: none">
+            <div class="choixJoueur">
+                <div class="choixJoueurText">
+                    <!-- <h2>Choisissez un coup :</h2> -->
+                </div>
+                <div class="choixJoueurImg">
+
+                    <div onclick="joueurJoue('ciseau')" class="shifumi pierre">
+                    <img class="pierreIMG" src="./assets/vecteezy_an-8-bit-retro-styled-pixel-art-illustration-of-a-stone-sword_19527033.png"
+                    alt="" />
+                    </div>
+                    <div onclick="joueurJoue('feuille')" class="shifumi feuille">
+                        <img class="feuilleIMG" src="./assets/vecteezy_vintage-illustration-old-parchment-paper-texture-classic_11832101.png"
+                        alt="" />
+                    </div>
+                    <div onclick="joueurJoue('pierre')" class="shifumi ciseau">
+                        <img id="ciseauIMG" src="./assets/vecteezy_une-illustration-pixel-art-de-style-retro-8-bits-d-un-rocher_19527056.png"
+                        alt="" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="resultat" style="display: none">
+            <div class="resultatImg"></div>
+            <div class="resultatText"></div>
+            <!-- <button class="rejouer" onclick="rejouer()">REJOUER</button> -->
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
